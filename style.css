@@ -1,22 +1,41 @@
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ 
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   font-family: 'Roboto';
 }
-div {
+.header, .links, .herobody, .infocontainer, .action{
     display: flex;
 }
-.headerlinks{
-    display: flex;
-}
-.herotext{
-    display: flex;
-    flex-direction: column;
-}
-.info{
+.hero, .bodytext, .info, .quote, .infocontent, .quote, .actiontext{
     display: flex;
     flex-direction: column;
 }
-.test{
-    display: flex;
+.hero, .info, .quote, .action, .footer{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.hero, .footer{
+    background-color: #1F2937;
+
+}
+.quote{
+    background-color: #E5E7EB;
+}
+.header, .herobody{
+    justify-content: space-between;
+}
+.links{
+    gap: 10px;
+    list-style: none;
+}
+.img{
+    height: 100px;
+    width: 100px;
+    border: 5px solid #555;
+    border-radius: 10%;
+}
+.infocontainer{
+    align-content: center;
 }
